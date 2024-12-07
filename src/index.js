@@ -12,7 +12,6 @@ require('dotenv').config();
 
 const authenticateToken = require("./middlewares/jwtmiddleware");
 
-// Use express.json() instead of bodyParser
 app.use(express.json());
 
 const jwtsecret = process.env.JWT_SECRET;
@@ -282,7 +281,6 @@ app.post('/api/v1/book_seat', authenticateToken, async (req, res) => {
 
     const userId = req.UserId;
 
-    // Check if userId is valid
     if (!userId) {
         return res.status(400).json({
             message: "User not authenticated, invalid token"
