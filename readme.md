@@ -1,12 +1,15 @@
 -- Start of with npm install to install all dependencies
 
-To run this code the first step is to get yourself a local MYSQL instance and open the query folder inside it go to db.js there add your HOST USER AND PASSWORD and then run  
+To run this code the first step is to get yourself a local MYSQL instance and then open by cd src/query the query folder inside it go to db.js there add your HOST USER AND PASSWORD and then run  
 
 -- Node db.js
 
 -- After this you are all set
 
-This project has 8 endpoints listed below 
+get out of query folder cd .. and run nodemon/node index.js
+
+This project has 8 endpoints listed below
+
 -- https://localhost:3000/api/v1/register_user
 
 A post request to register a user, test it using the json data in the format 
